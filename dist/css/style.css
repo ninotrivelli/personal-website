@@ -464,4 +464,32 @@ button:hover,
     flex-basis: 40%;
   }
 }
+
+.contact {
+  margin-top: 14rem;
+}
+
+.contact h2,
+.contact p {
+  text-align: center;
+}
+
+.contact p {
+  margin-top: 2rem;
+}
+
+.contact a {
+  color: #6a53df;
+}
+
+.contact a:hover {
+  color: #8f7ee7;
+}
+
+footer {
+  margin-top: 8rem;
+  padding: 1rem;
+  color: white;
+  background-color: #8f7ee7;
+}
 /*# sourceMappingURL=style.css.map */

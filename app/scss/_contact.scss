@@ -1,0 +1,20 @@
+.contact {
+  margin-top: 14rem;
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+
+  a {
+    color: $main-color;
+
+    &:hover {
+      color: $main-lighter;
+    }
+  }
+}
