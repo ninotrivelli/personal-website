@@ -1,0 +1,58 @@
+.skills {
+  margin-top: 15rem;
+  text-align: center;
+
+  p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+    i {
+      font-size: 3.3rem;
+    }
+  }
+
+  ul {
+    li {
+      margin: 1rem 0rem;
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 4rem;
+        margin-right: 1rem;
+      }
+
+      img {
+        margin-right: 1rem;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  @include breakpoint-up(medium) {
+    h2 {
+      margin-bottom: 4rem;
+    }
+
+    ul {
+      flex-direction: row;
+
+      li {
+        font-size: $font-med;
+        margin: 0rem 2rem;
+
+        i,
+        img {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+
+    p {
+      margin-top: 4rem;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: $font-med;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+h2 {
+  font-size: $font-xlarge;
+  color: $dark-gray;
+}
+
+a {
+  color: $dark-gray;
+
+  &:hover {
+    color: $main-color;
+    transition: color 0.2s ease-in-out;
+  }
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+i {
+  color: $main-color;
+  font-size: $font-large;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button,
+.btn {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  background-color: $main-color;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: $font-med;
+  padding: 1.5rem 4rem;
+  margin: 2rem 0rem;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover,
+.btn:hover {
+  background-color: $main-lighter;
+  transform: translateY(-5px);
+  box-shadow: rgba(50, 50, 93, 0.15) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-jc-sp {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// Visibility
+
+.hide-for-mobile {
+  @include breakpoint-down(small) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(medium) {
+    display: none;
+  }
+}

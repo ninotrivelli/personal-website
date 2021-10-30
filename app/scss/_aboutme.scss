@@ -1,0 +1,44 @@
+.about_me {
+  text-align: center;
+
+  &__img {
+    flex: 1;
+    align-self: center;
+    img {
+      align-self: center;
+      max-width: 230px;
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    flex: 2;
+    padding: 2rem;
+    justify-content: flex-start;
+    p {
+      margin-bottom: 4rem;
+    }
+
+    a,
+    i {
+      color: white;
+    }
+
+    a {
+      transition: all 0.25s ease-in-out;
+      padding: 1.5rem 3rem;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 3rem;
+    @include breakpoint-up(medium) {
+      flex-direction: row;
+      margin-top: 0;
+    }
+  }
+
+  @include breakpoint-up(medium) {
+    text-align: left;
+  }
+}

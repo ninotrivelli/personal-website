@@ -1,0 +1,50 @@
+.portfolio {
+  margin-top: 15rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  &__wrapper {
+    gap: 2rem;
+
+    @include breakpoint-up(medium) {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__proyect_item {
+    flex-basis: 90%;
+    padding: 1rem;
+    transition: transform 0.35s ease-in-out;
+
+    img {
+      width: 100%;
+      border: 1px solid rgba($color: #eeeeee, $alpha: 1);
+    }
+
+    h3,
+    small {
+      margin: 1rem 0rem;
+      color: $dark-gray;
+    }
+
+    a {
+      color: $main-color;
+    }
+
+    small {
+      font-size: $font-small;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      // transition: transform 0.4s ease-in-out;
+    }
+
+    @include breakpoint-up(medium) {
+      flex-basis: 40%;
+    }
+  }
+}

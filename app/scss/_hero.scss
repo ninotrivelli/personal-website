@@ -1,0 +1,76 @@
+.hero {
+  min-height: 80vh;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+
+  @include breakpoint-up(medium) {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  > div {
+    margin: 0rem 1rem;
+  }
+
+  &__social-links {
+    flex: 1;
+    order: 2;
+    flex-direction: row;
+
+    i {
+      font-size: 4rem;
+
+      &:hover {
+        color: $main-lighter;
+        transition: color 0.2s ease-in-out;
+      }
+    }
+
+    @include breakpoint-up(medium) {
+      order: 1;
+      flex-direction: column;
+
+      i {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  &__text {
+    order: 1;
+    flex: 2;
+    padding: 3rem 3rem 0rem 3rem;
+    h1 {
+      font-size: $font-xxlarge;
+      line-height: 1.1;
+      margin: 1rem 0rem;
+    }
+
+    h2 {
+      font-size: $font-large;
+    }
+
+    h2 {
+      margin: 1rem 0rem;
+    }
+
+    @include breakpoint-up(medium) {
+      order: 2;
+      padding: 0;
+    }
+  }
+
+  &__animated-svg {
+    order: 3;
+    flex: 3;
+
+    svg {
+      max-width: 100%;
+
+      #manzana {
+        animation: up-and-down 5s ease-in-out infinite;
+      }
+    }
+  }
+}
