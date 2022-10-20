@@ -15,6 +15,8 @@
   }
 
   &__proyect_item {
+
+    
     flex-basis: 90%;
     padding: 1rem;
     transition: transform 0.35s ease-in-out;
@@ -38,6 +40,8 @@
       font-size: $font-small;
     }
 
+    
+
     &:hover {
       transform: scale(1.05);
       // transition: transform 0.4s ease-in-out;
@@ -48,3 +52,4 @@
     }
   }
 }
+
