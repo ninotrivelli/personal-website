@@ -135,8 +135,10 @@ button:hover,
 .header__nav {
   padding: 1.8rem;
   box-shadow: rgba(2, 0, 0, 0.1) 0px 1px 5px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   background-color: white;
-  position: relative;
   z-index: 10;
 }
 .header__nav .logo {
